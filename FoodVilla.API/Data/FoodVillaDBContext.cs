@@ -8,5 +8,7 @@ namespace FoodVilla.API.Data
         public FoodVillaDBContext(DbContextOptions<FoodVillaDBContext> context) : base(context) { }
 
         public DbSet<Product> Products { get; set; }
+
+        public DbSet<Category> Categories { get; set; }
     }
 }
